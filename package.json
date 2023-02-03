@@ -1,8 +1,8 @@
 {
-  "name": "cook-app",
+  "name": "cookies-app",
   "version": "1.0.0",
   "private": true,
-  "description": "cook-app",
+  "description": "cookies-app",
   "author": "v.kuzmin",
   "keywords": [
     "gatsby"

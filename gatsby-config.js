@@ -3,7 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `cook-app`,
+    title: `cookies-app`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-sass"]
