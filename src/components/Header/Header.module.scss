@@ -1,0 +1,61 @@
+@import "./../../assets/styles/vars";
+
+.header {
+  padding: 10px 0;
+  font-size: 14px;
+  background-color: #F6EEE9;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 85px;
+  margin-right: $indent-between-header-nav-items;
+  object-fit: cover;
+}
+
+.link {
+  color: $main-text-color;
+  transition: .2s;
+  &:hover {
+    color: $dark-text-color;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  &__catalog {
+    display: flex;
+    align-items: center;
+    composes: link;
+    padding-right: $indent-between-header-nav-items;
+    margin-right: $indent-between-header-nav-items + 1px;
+    border-right: 1px solid $main-text-color;
+    &__burger {
+
+    }
+    &__item {
+
+    }
+  }
+
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: $indent-between-header-nav-items;
+    &__item {
+     composes: link;
+    }
+  }
+}
