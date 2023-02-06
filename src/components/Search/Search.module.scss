@@ -1,0 +1,53 @@
+@import "./../../assets/styles/vars";
+
+.icon {
+  position: absolute;
+  cursor: pointer;
+
+  path {
+    fill: $main-text-color;
+  }
+}
+
+.searchIcon {
+  composes: icon;
+  width: 18px;
+  height: 18px;
+  left: 0;
+}
+
+.deleteIcon {
+  composes: icon;
+  width: 0;
+  height: 10px;
+  right: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+
+  &.isShow {
+    border-bottom: 1px solid $light-text-color;
+
+    .field {
+      width: 175px;
+      padding: 3px 15px 3px 20px;
+    }
+
+    .deleteIcon {
+      width: 10px;
+    }
+  }
+}
+
+.field {
+  width: 0;
+  color: $main-text-color;
+  background: transparent;
+  padding: 3px 0 3px 20px;
+  font-size: 14px;
+  transition: .2s;
+}
