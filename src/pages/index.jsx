@@ -1,9 +1,8 @@
-import * as React from "react"
+import React, {useRef} from "react"
 import {Button, Container, Layout, Section, Title} from "../components";
 import {StaticImage} from "gatsby-plugin-image";
 import {getRoutePath} from "../common/utils";
 import * as styles from './index.module.scss'
-import {useRef} from "react";
 import AdvantageIcon from './../assets/images/advantages-1.svg';
 
 const IndexPage = () => {
@@ -78,11 +77,12 @@ const IndexPage = () => {
 
             <Section className={styles.about}>
                 <Container className={styles.about__container}>
-                    <StaticImage className={styles.about__img} src='./../assets/images/image.png' alt=""/>
+                    <StaticImage className={styles.about__img} src='./../assets/images/about-image.png' alt="cooks"/>
                     <div className={styles.about__info}>
                         <Title>О нас</Title>
                         <p className={styles.about__subtitle}>Lorem ipsum dolor.</p>
-                        <p  className={styles.about__desc}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci consectetur dolor eveniet
+                        <p className={styles.about__desc}>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Adipisci consectetur dolor eveniet
                             modi officia. Explicabo fugit incidunt inventore magni numquam!
                         </p>
                         <Button to={getRoutePath('company')}>Подробнее</Button>
