@@ -1,0 +1,18 @@
+@import "../../assets/styles/vars";
+.button {
+  background-color: $main-color;
+  color: $secondary-color;
+  padding: 15px 30px;
+  text-align: center;
+  transition: .2s;
+  border: 1px solid transparent;
+  font-weight: 600;
+  &:hover {
+    background-color: white;
+    border: 1px solid $main-color;
+    color: $main-color
+  }
+  &:active {
+    transform: scale(.98);
+  }
+}

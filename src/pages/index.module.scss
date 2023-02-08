@@ -1,0 +1,135 @@
+@import "./../assets/styles/vars";
+
+.catalogSection {
+  height: calc(100vh - #{$header-height});
+  background-color: $light-color;
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    flex-shrink: 0;
+  }
+
+  &__desc {
+    margin-bottom: 2em;
+  }
+
+  &__image {
+    max-width: 640px;
+    min-width: 300px;
+    margin-left: 40px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__arrow {
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .5s;
+
+    &:hover {
+      padding-top: 20px;
+      bottom: 10px;
+    }
+  }
+}
+
+.advantages {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4em;
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 30%;
+      text-align: center;
+
+      &__img {
+        width: 80px;
+      }
+
+      &__title {
+        font-size: 24px;
+        margin-bottom: .5em;
+
+        .strong {
+          font-size: 3em;
+          color: $strong-color;
+        }
+      }
+
+      &__desc {
+
+      }
+    }
+  }
+}
+
+.about {
+  background-color: $light-color;
+  height: auto;
+  min-height: auto;
+  overflow: hidden;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+
+  &__info {
+    width: 500px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__img {
+    margin-bottom: -60px;
+    margin-left: -5vw;
+    width: 800px;
+    margin-right: 100px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    margin-bottom: .5em;
+    font-weight: 100;
+  }
+
+  &__desc {
+    margin-bottom: 3em;
+  }
+}
