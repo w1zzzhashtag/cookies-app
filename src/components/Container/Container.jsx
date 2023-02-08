@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import cn from 'classnames'
 import * as styles from './Container.module.scss'
 
@@ -10,4 +10,4 @@ const Container = ({children, className = ''}) => {
     );
 };
 
-export default Container;
+export default memo(Container);

@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect, useRef, useState} from 'react';
+import React, {memo, useCallback, useEffect, useRef, useState} from 'react';
 import cn from 'classnames'
 import * as styles from './Search.module.scss'
 
@@ -48,4 +48,4 @@ const Search = () => {
     );
 };
 
-export default Search;
+export default memo(Search);

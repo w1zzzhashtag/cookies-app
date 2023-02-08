@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {memo} from 'react';
 import {Header, Footer} from "../index";
 import './Layout.module.scss'
 
@@ -12,4 +12,4 @@ const Layout = ({children}) => {
     );
 };
 
-export default Layout;
+export default memo(Layout);

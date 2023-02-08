@@ -26,8 +26,17 @@ module.exports = {
                     {
                         name: `Raleway`,
                         file: `https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap`,
-                    },
+                    }
                 ],
             },
-        }]
+        },
+        {
+            resolve: "gatsby-plugin-react-svg",
+            options: {
+                rule: {
+                    include: /assets/
+                }
+            }
+        }
+    ]
 };

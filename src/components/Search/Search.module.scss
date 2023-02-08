@@ -5,7 +5,7 @@
   cursor: pointer;
 
   path {
-    fill: $main-text-color;
+    fill: $main-color;
   }
 }
 
@@ -30,7 +30,7 @@
   position: relative;
 
   &.isShow {
-    border-bottom: 1px solid $light-text-color;
+    border-bottom: 1px solid $main-color;
 
     .field {
       width: 175px;
@@ -45,9 +45,8 @@
 
 .field {
   width: 0;
-  color: $main-text-color;
+  color: $main-color;
   background: transparent;
   padding: 3px 0 3px 20px;
-  font-size: 14px;
   transition: .2s;
 }
