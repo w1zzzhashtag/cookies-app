@@ -5,7 +5,9 @@ import * as styles from './Cookie.module.scss'
 
 const Cookie = ({position}) => {
     return (
-        <StaticImage src='./../../assets/images/cookie.png' alt='cookies' className={cn(styles.cookie, styles[position])}/>
+        <div className={cn(styles.cookie, styles[position])}>
+            <StaticImage src='./../../assets/images/cookie.png' alt='cookies'/>
+        </div>
     );
 };
 
