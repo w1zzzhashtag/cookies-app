@@ -4,6 +4,7 @@ import {Link} from "gatsby";
 import {StaticImage} from 'gatsby-plugin-image'
 import {Container, Search} from "../index";
 import {getRoutePath} from "../../common/utils";
+import {PHONE} from "../../common/constants";
 
 const Header = () => {
     return (
@@ -24,7 +25,7 @@ const Header = () => {
                 </div>
 
                 <div className={styles.additionalTools}>
-                    <a href='tel:+79999999999' className={styles.additionalTools__phone}>+7 (999) 999-99-99</a>
+                    <a href={PHONE.href} className={styles.additionalTools__phone}>{PHONE.view}</a>
                     <Search/>
                 </div>
             </Container>

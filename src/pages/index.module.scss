@@ -40,6 +40,12 @@
     transform: translateX(-50%);
     transition: .5s;
 
+    &__svg {
+      fill: $main-color;
+      width: 25px;
+      transform: rotate(-90deg);
+    }
+
     &:hover {
       padding-top: 20px;
       bottom: 10px;
@@ -48,6 +54,8 @@
 }
 
 .advantages {
+  position: relative;
+
   &__container {
     display: flex;
     flex-direction: column;

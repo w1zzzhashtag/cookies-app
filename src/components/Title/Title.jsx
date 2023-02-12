@@ -7,7 +7,7 @@ const Title = ({variant, children, className, ...rest}) => {
     const props = useMemo(() => ({
         className: cn(styles.title, className),
         ...rest
-    }), [rest])
+    }), [rest, className])
 
     return useMemo(() => {
 

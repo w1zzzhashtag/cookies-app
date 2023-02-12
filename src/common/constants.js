@@ -21,3 +21,7 @@ export const ROUTES = {
     },
 }
 
+export const PHONE = {
+    href: 'tel:+79999999999',
+    view: '+7 (999) 999-99-99'
+}

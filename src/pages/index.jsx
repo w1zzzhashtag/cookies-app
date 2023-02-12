@@ -1,5 +1,5 @@
 import React, {useRef} from "react"
-import {Button, Container, Layout, Section, Title} from "../components";
+import {Button, Container, Cookie, Layout, Section, Title} from "../components";
 import {StaticImage} from "gatsby-plugin-image";
 import {getRoutePath} from "../common/utils";
 import * as styles from './index.module.scss'
@@ -33,7 +33,14 @@ const IndexPage = () => {
                     />
                 </Container>
 
-                <button className={styles.catalogSection__arrow} onClick={scrollToNextSection}>arrow</button>
+                <button className={styles.catalogSection__arrow} onClick={scrollToNextSection}>
+                    <svg className={styles.catalogSection__arrow__svg} version="1.1" viewBox="0 0 15.699 8.707"
+                         xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <polygon
+                            points="15.699,3.854 1.914,3.854 5.061,0.707 4.354,0 0,4.354 4.354,8.707 5.061,8 1.914,4.854 15.699,4.854 "/>
+                    </svg>
+                </button>
             </Section>
 
             <Section ref={ref} className={styles.advantages}>
@@ -73,6 +80,8 @@ const IndexPage = () => {
                         </div>
                     </div>
                 </Container>
+                <Cookie position='top' />
+                <Cookie position='bottom' />
             </Section>
 
             <Section className={styles.about}>
