@@ -1,0 +1,14 @@
+.cookie {
+  position: absolute;
+  width: 120px;
+  &.top {
+    top: 0;
+    transform: translateY(-50%);
+    right: 30px;
+  }
+  &.bottom {
+    bottom: 0;
+    left: 30px;
+    transform: translateY(50%);
+  }
+}

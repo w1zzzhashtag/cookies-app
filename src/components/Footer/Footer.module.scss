@@ -1,0 +1,48 @@
+@import "../../assets/styles/vars";
+
+.footer {
+  background-color: $dark-color;
+  padding: 30px 0;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    border-bottom: 1px solid rgba($secondary-color, .5);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__phone {
+    color: $secondary-color;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__nav {
+    display: flex;
+    gap: 30px;
+
+    &__item {
+      font-size: 18px;
+      color: $secondary-color;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    color: rgba($secondary-color, .5);
+    gap: 30px;
+    &__text {}
+    &__link {
+      color: inherit;
+    }
+  }
+}
